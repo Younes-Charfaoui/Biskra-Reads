@@ -21,11 +21,11 @@ class QuizActivity : AppCompatActivity() {
         evaluateButton.setOnClickListener {
             var result = 0
             if (radioGroupQuestionOne.checkedRadioButtonId == R.id.qstOneResponseOne) {
-                result += 50
+                result += 100
             }
 
             if (radioGroupQuestionTwo.checkedRadioButtonId == R.id.qstTwoResponseThree) {
-                result += 50
+                result += 100
             }
 
             Toast.makeText(this, "The result is $result%", Toast.LENGTH_SHORT).show()
